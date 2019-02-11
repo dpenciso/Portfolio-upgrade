@@ -1,3 +1,17 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #0b8ee0
+}
+
+.intro {
+
+}
+
+.intro p {
+  color: white
+}
+
 .project {
     text-decoration: none;
     color: #008080;
