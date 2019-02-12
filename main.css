@@ -1,72 +1,159 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: gray
+  /* text-align: center; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 nav ul {
-  text-align: center;
-  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  font-size: 1.25rem;
 }
 
 nav ul li {
   display: inline-block;
-  margin: 50px;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #1dcece
+  color: #1dcece;
 }
 
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+}
 
 .intro {
   min-height: 55vh;
   padding-top: 45vh;
-}
-
-.intro h1{
-  margin: 0%;
+  text-align: center;
+  background-color: gray;
 }
 
 .intro p {
-  color: white
+  color: white;
 }
 
+
 .project {
-    text-decoration: none;
-    color: #1dcece
-    /* display: inline-block;
+  text-decoration: none;
+  color: #1dcece;
+  /* display: inline-block;
     overflow: hidden;
     border: 2px solid lightblue;
     height: 220px;
     width: 280px;
     margin: 40px 100px; */
-    /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
-  }
-  
-figure {
-    max-width: 200px;
+  /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
 }
 
-  .figure-pic {
-    width: 100%;
-    height: 180px;
-  }
-  
-figcaption {
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-  }
 
-.header p{
-  font-size: 23
-  px;
+.project-pics {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  font-weight: normal;
+}
+
+.work {
+  background-color: white;
+}
+
+figure {
+  max-width: 200px;
+}
+
+.figure-pic {
+  width: 100%;
+  height: 180px;
+}
+
+figcaption {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.header p {
+  font-size: 23px;
+  text-align: center;
+}
+
+.contact {
+  background-color: gray
 }
 
 .contact-details {
-  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  border: 2px solid #1dcece;
+  border-radius: 20%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: #e0ebe8;
   color: #1dcece;
-  font-size: 20px;
+  text-decoration: none;
+
+}
+#contact {
+  
+}
+
+#contact a {
+  text-align: center;
+  background-color: white;
+  margin: 0%;
+}
+
+.contact-details:hover {
+  background: #e4f1fe;
+  color: green;
+}
+
+@media only screen and (max-width: 367px) {
+  /*    #contact{
+    min-height:1100px;
+  } */
+  .contact-details {
+    border: 2px solid #90c695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+}
+
+footer {
+  background-color: white;
+  text-align: center;
 }
