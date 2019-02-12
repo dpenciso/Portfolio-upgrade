@@ -11,7 +11,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 75px;
+  margin: 50px;
 }
 
 nav ul li a {
@@ -34,7 +34,7 @@ nav ul li a {
 
 .project {
     text-decoration: none;
-  color: #1dcece
+    color: #1dcece
     /* display: inline-block;
     overflow: hidden;
     border: 2px solid lightblue;
@@ -60,7 +60,8 @@ figcaption {
   }
 
 .header p{
-  font-size: 23px;
+  font-size: 23
+  px;
 }
 
 .contact-details {
