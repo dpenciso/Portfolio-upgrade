@@ -24,6 +24,10 @@ nav ul li a{
 
 }
 
+.intro h1{
+  margin: 0%;
+}
+
 .intro p {
   color: white
 }
