@@ -21,7 +21,8 @@ nav ul li a {
 
 
 .intro {
-
+  min-height: 55vh;
+  padding-top: 45vh;
 }
 
 .intro h1{
