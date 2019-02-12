@@ -4,17 +4,17 @@ body {
   background-color: gray
 }
 
-nav ul{
+nav ul {
   text-align: center;
   font-size: 20px;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   margin: 75px;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: #1dcece
 }
@@ -58,3 +58,9 @@ figcaption {
     font-size: 1.5rem;
     text-align: center;
   }
+
+.contact-details {
+  text-decoration: none;
+  color: #1dcece;
+  font-size: 20px;
+}
