@@ -59,6 +59,10 @@ figcaption {
     text-align: center;
   }
 
+.header p{
+  font-size: 23px;
+}
+
 .contact-details {
   text-decoration: none;
   color: #1dcece;
