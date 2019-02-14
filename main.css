@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #3D013C;
+  color: black;
   /* text-align: center; */
 }
 
@@ -14,7 +14,7 @@ nav ul {
   justify-content: flex-end;
   position: fixed;
   width: 100%;
-  background-color: #60487F;
+  background-color: white;
   font-size: 1.25rem;
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
   min-height: 55vh;
   padding-top: 45vh;
   text-align: center;
-  background-color: #4AF8FF;
+  background-color: rgb(183, 188, 189);
 }
 
 .intro p {
@@ -56,7 +56,7 @@ nav ul li a {
 
 .project {
   text-decoration: none;
-  color: #3D013C;
+  color: black;
   /* display: inline-block;
     overflow: hidden;
     border: 2px solid lightblue;
@@ -66,6 +66,9 @@ nav ul li a {
   /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
 }
 
+.project:hover{
+  color: #4AF8FF;
+}
 
 .project-pics {
   display: flex;
@@ -80,7 +83,7 @@ nav ul li a {
 }
 
 .work {
-  background-color: #68C2E5;
+  background-color: rgb(194, 197, 197);
 }
 
 figure {
@@ -110,7 +113,7 @@ figcaption {
 }
 
 .contact {
-  background-color: #7888BF;
+  background-color: rgb(87, 88, 90);
 }
 
 .contact-details {
@@ -136,12 +139,12 @@ figcaption {
 
 #contact a {
   text-align: center;
-  background-color: white;
+  background-color: black;
 }
 
 .contact-details:hover {
   background: #e4f1fe;
-  color: green;
+  color: white;
 }
 
 @media only screen and (max-width: 367px) {
@@ -149,7 +152,7 @@ figcaption {
     min-height:1100px;
   } */
   .contact-details {
-    border: 2px solid #90c695;
+    border: 2px solid #4AF8FF;
     border-radius: 0;
     width: 90px;
     height: 20px;
@@ -159,7 +162,7 @@ figcaption {
 }
 
 footer {
-  background-color: #3D013C;
+  background-color: black;
   text-align: center;
   color: #4AF8FF;
   padding: 10px;
