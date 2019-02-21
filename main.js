@@ -12,6 +12,7 @@ films.forEach((film)=> {
 
     intro.appendChild(titleElement)
     intro.appendChild(crawlElement)
+    intro.appendChild(document.createElement('hr'))
 })
 
 
