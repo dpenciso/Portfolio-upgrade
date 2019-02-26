@@ -3,9 +3,15 @@ import {people} from './people.js'
 
 const intro = document.querySelector('.intro')
 
+films.sort ((a,b) => (a.episode_id > b.episode_id) ? 1 : -1 )
+
+
+
 films.forEach((film)=> {
     let titleElement = document.createElement('h1')
     let crawlElement = document.createElement('h3')
+    let lineBreak = document.createElement ('hr')
+    intro.appendChild (lineBreak)
 
     titleElement.textContent = film.title
     crawlElement.textContent = film.opening_crawl
