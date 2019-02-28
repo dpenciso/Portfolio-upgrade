@@ -1,13 +1,9 @@
-import { films } from "./films.js";
-import { people } from "./people.js";
+import { films } from './films.js';
+import { people } from './people.js';
 
 const intro = document.querySelector(".intro");
 
 films.sort((a, b) => (a.episode_id > b.episode_id ? 1 : -1));
-
-// const sorted = films.sort ((a,b) => (a.episode_id > b.episode_id) ? 1: -1)
-
-//console.log(sorted)
 
 films.forEach(film => {
   let tile = document.createElement('div')
@@ -24,8 +20,8 @@ films.forEach(film => {
  
 });
 
-// let titleElement = document.querySelector('.title')
-// let crawlElement = document.querySelector('.crawl')
+const men = people.filter(person => person.gender === "male");
+const women = people.filter(person => person.gender === "women");
+const other = people.filter(person => (person => person.gender === "n/a") || (person => person.gender === "none") || (person => person.gender === "hermaphrodite"));
 
-// titleElement.textContent = films[0].title
-// crawlElement.textContent = films[0].opening_crawl
+console.log()
