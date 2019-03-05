@@ -46,7 +46,7 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-between
+  align-content: space-between;
   min-height: 55vh;
   padding-top: 45vh;
   background-color: rgb(183, 188, 189);
