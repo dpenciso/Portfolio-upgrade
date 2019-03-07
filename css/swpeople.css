@@ -4,8 +4,8 @@
     flex-wrap: wrap;
 }
 
-.box {
-    width: 120px;
+.container div {
+    width: 200px;
     margin: 10px;
     text-align: center;
 }
