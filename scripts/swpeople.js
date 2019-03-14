@@ -1,6 +1,9 @@
 import { people } from '../data/people.js';
 import { planets } from '../data/planets.js';
+import { films } from '../data/films.js'
 
+
+// characters
 const getLastNumber = (url) => {
     let end = url.lastIndexOf('/')
     let start = end -2
@@ -24,11 +27,7 @@ const allHomeWorlds = people.map(person => {
     }
 })
 
-//console.log(allHomeWorlds)
 
-
-
-// https://starwars-visualguide.com/assets/img/characters/1.jpg
 
 const mainContainer = document.createElement('div')
 mainContainer.className = 'container'
@@ -51,14 +50,22 @@ allHomeWorlds.forEach (person => {
 document.body.appendChild(mainContainer)
 
 
-// const foundPlanet = (arr, planetUrl) => {
-//   const foundIt = {}
-//     arr.find((element) => {
-//         console.log(element, planetUrl)
-//         if (element.homeworld === planetUrl) {
-//         foundIt = element
-//       }
-//     })
-// }
+// films
+const intro = document.querySelector(".intro");
 
-// console.log(foundPlanet(men, 'https://swapi.co/api/planets/1/'))
+films.sort((a, b) => (a.episode_id > b.episode_id ? 1 : -1));
+
+films.forEach(film => {
+  let tile = document.createElement('div')
+  
+  let titleElement = document.createElement('h1')
+  tile.appendChild(titleElement)
+  titleElement.textContent = film.title
+  
+  let crawlElement = document.createElement('div')
+  tile.appendChild(crawlElement)
+  crawlElement.textContent = film.opening_crawl
+
+  intro.appendChild(tile);
+ 
+});

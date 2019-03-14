@@ -1,3 +1,42 @@
+body {
+    /* background: black;  */
+    background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 0px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.intro {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 20px;
+    padding: 25px;
+    
+}
+
+.crawl-heading {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    color: yellow;
+}
+
+.heading {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+    color: yellow;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -9,3 +48,4 @@
     margin: 10px;
     text-align: center;
 }
+
