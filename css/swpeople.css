@@ -1,5 +1,4 @@
 body {
-    /* background: black;  */
     background-color:black;
 background-image:
 radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
@@ -10,30 +9,58 @@ background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 50px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: yellow;
+  }
+
 .intro {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: center;
     color: white;
+}
+
+.intro div {
+    height: 500px;
+    width: 500px
 }
 
 .intro h1 {
     font-size: 20px;
     padding: 25px;
-    
 }
 
 .crawl-heading {
     font-size: 50px;
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 100px;
     color: yellow;
 }
 
-.heading {
+.character-heading {
     font-size: 50px;
     text-align: center;
     margin: 50px;
+    padding-top: 100px;
     color: yellow;
 }
 
