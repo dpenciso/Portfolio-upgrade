@@ -53,9 +53,15 @@ main {
 }
 
 .card__face--back {
+  position: absolute;
   text-align: center;
   transform: rotateY(180deg);
   background: gray;
+}
+
+.infoDiv {
+  position: relative;
+  font-size: 1.4rem;
 }
 
 figure {
@@ -65,10 +71,19 @@ figure {
 
 button {
   width: 300px;
+  height: 80px;
+  background: rgb(42, 43, 39);
+  color: white;
 }
 
 img {
   padding: 4px;
   width: 200px;
   height: 200px;
+}
+
+.backImage {
+  position: absolute;
+  left: 6px;
+  opacity: .3;
 }
