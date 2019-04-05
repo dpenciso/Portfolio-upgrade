@@ -1,4 +1,4 @@
-import { people } from "./kh-characters.js";
+import { people } from "../data/kh-characters.js";
 
 console.log();
 
