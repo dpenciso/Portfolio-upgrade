@@ -1,0 +1,91 @@
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1260px;
+}
+
+.container div {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  background-image: url("./images/heart.jpg");
+  background-position: center;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+.container p {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.containerTwo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1260px;
+}
+
+.containerTwo div {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  background-image: url("./images/heart.jpg");
+  background-position: center;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+.containerTwo p {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.containerThree {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1260px;
+}
+
+.containerThree div {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  background-image: url("./images/heart.jpg");
+  background-position: center;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+
+.containerThree p {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+img {
+  margin-top: 40px;
+  max-width: 500px;
+  max-height: 325px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* height:60px; */
+}
