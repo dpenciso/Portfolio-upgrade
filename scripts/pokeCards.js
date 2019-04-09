@@ -88,6 +88,9 @@ function matchIdToImage(aPokemon) {
     if(aPokemon.id > 99) {
         aPokemon.imageID = aPokemon.id
     }
+    if(aPokemon.name === "mr-mime") {
+        aPokemon.name = "mr. Mime"
+    }
     let dashIndex = aPokemon.name.indexOf("-")
     if (dashIndex !== -1) {
         console.log(`Found a pokemon named ${aPokemon.name} who has a dash in thier name`)
@@ -110,13 +113,48 @@ function fetchSinglePokemon(id) {
 class Pokemon {
     constructor(name) {
         this.id = 0,
-        this.name = name
+        this.name = name,
+        this.moves = [
+          {
+            move: {
+              name: 'Swag',
+            },
+          },
+          {
+            move: {
+              name: 'Wreck',
+            },
+          },
+          {
+            move: {
+              name: 'Destroy',
+            },
+          },
+          {
+            move: {
+              name: 'Create',
+            },
+          },
+        ]
     }
-}
+  }
 
-const newPokemonButton = document.querySelector('button')
+  const davidmonButton = document.querySelector('#davidmon')
+  const selectPokemonButton = document.querySelector('#fetchPokemon')
 
-newPokemonButton.addEventListener('click', function() {
-    let pokemonID = prompt('Enter an ID of an existing pokemon:')
-    fetchSinglePokemon(pokemonID)
-  });
+  davidmonButton.addEventListener('click', function() {
+    createPokeCard(matchIdToImage(new Pokemon('Davidmon')))
+  })
+  
+  selectPokemonButton.addEventListener('click', function() {
+      let pokemonID = prompt('Enter an ID of an existing pokemon:')
+      fetchSinglePokemon(pokemonID)
+  })
+  
+  
+  
+//   poketypeButton.addEventListener('click', function() {
+//       const poisonTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "poison")
+  
+//   console.log(poisonTypes)
+//   })
