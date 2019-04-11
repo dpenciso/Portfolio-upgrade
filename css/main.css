@@ -136,6 +136,16 @@ figure {
   height: 115px;
 }
 
+.figure-pic_starwars {
+  width: 100%;
+  height: 130px;
+}
+
+.figure-pic_pokemon {
+  width: 100%;
+  height: 80px;
+}
+
 figcaption {
   font-weight: bold;
   font-size: 1.5rem;
