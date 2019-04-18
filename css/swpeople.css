@@ -7,7 +7,7 @@ radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
 radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
 background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-width: 175%;
+/* width: 175%; */
 }
 
 nav ul {
@@ -33,7 +33,7 @@ nav ul li a {
 
 .intro {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
     color: white;
