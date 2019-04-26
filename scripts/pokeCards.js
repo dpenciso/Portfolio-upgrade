@@ -57,6 +57,40 @@ function createPokeCard(pokeData) {
     let card = document.createElement('div')
     card.className = 'card'
 
+let type=pokeData.types[0].type.name
+
+switch (type) {
+  case 'poison':
+    scene.classList.toggle('poison')
+    break;
+    case 'normal':
+    scene.classList.toggle('normal')
+    break;
+    case 'psychic':
+    scene.classList.toggle('psychic')
+    break;
+    case 'water':
+    scene.classList.toggle('water')
+    break;
+    case 'flying':
+    scene.classList.toggle('flying')
+    break;
+    case 'fire':
+    scene.classList.toggle('fire')
+    break;
+    case 'fairy':
+    scene.classList.toggle('fairy')
+    break;
+    case 'electric':
+    scene.classList.toggle('electric')
+    break;
+    case 'grass':
+    scene.classList.toggle('grass')
+    break;
+    default:
+      console.log(`Don't know this pokemon type`)
+}
+
     card.appendChild(cardFront(pokeData))
     card.appendChild(cardBack(pokeData))
 
@@ -135,6 +169,10 @@ class Pokemon {
               name: 'Create',
             },
           },
+          this.types = [
+            {type: {
+            name: 'Peruvian'}}
+          ]
         ]
     }
   }
